@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-12-19T14:57:56
+# Project created by QtCreator 2017-12-20T14:13:59
 #
 #-------------------------------------------------
 
@@ -25,13 +25,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    logindialog.cpp
+    dialog.cpp
 
 HEADERS  += mainwindow.h \
-    logindialog.h
+    dialog.h
 
 FORMS    += mainwindow.ui \
-    logindialog.ui
-
-RESOURCES += \
-    myicon.qrc
+    dialog.ui
