@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-12-20T14:13:59
+# Project created by QtCreator 2017-12-20T19:53:47
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = login
+TARGET = try
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -25,12 +25,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    dialog.cpp \
-    goble.cpp
+    dialog.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
-    goble.h
+    car.h
 
 FORMS    += mainwindow.ui \
     dialog.ui

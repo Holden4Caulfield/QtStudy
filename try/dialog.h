@@ -1,6 +1,6 @@
 #ifndef DIALOG_H
 #define DIALOG_H
-#include<QString>
+
 #include <QDialog>
 
 namespace Ui {
@@ -14,9 +14,6 @@ class Dialog : public QDialog
 public:
     explicit Dialog(QWidget *parent = 0);
     ~Dialog();
-
-private slots:
-    void on_loginBtn_clicked();
 
 private:
     Ui::Dialog *ui;
