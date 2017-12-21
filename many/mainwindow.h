@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include"dialog.h"
-#include"increase.h"
+#include"dialog1.h"
+#include"dialog2.h"
 #include <QMainWindow>
 #include"car.h"
 namespace Ui {
@@ -18,16 +18,17 @@ public:
     QList<car>Link;
 
 private slots:
+    void on_dia1_clicked();
+
     void on_pushButton_clicked();
 
-    void on_it_clicked();
-
-    //void on_increase_clicked();
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;
-    Dialog dlg;
-    Increase icea;
+    Dialog1 *d1;
+    Dialog2 *d2;
+   // QList<car>Link;
 };
 
 #endif // MAINWINDOW_H

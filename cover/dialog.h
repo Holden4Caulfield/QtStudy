@@ -19,8 +19,6 @@ private:
     Ui::Dialog *ui;
 signals:
     void  sendData(QString);
-/*private slots:
-        void on_buttonBox_accepted();*/
 private slots:
     void on_buttonBox_accepted();
 };

@@ -12,3 +12,9 @@ Dialog::~Dialog()
 {
     delete ui;
 }
+
+void Dialog::on_childern_clicked()
+{
+    this->hide();
+    parentWidget()->show();
+}

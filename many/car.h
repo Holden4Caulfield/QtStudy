@@ -1,10 +1,11 @@
 #ifndef CAR_H
 #define CAR_H
-#include<QList>
 #include<QString>
+#include<QList>
+
 typedef struct car
 {
     QString ID;
-    int n;
+    int l;
 }car;
 #endif // CAR_H

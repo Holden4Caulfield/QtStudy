@@ -22,8 +22,3 @@ void MainWindow::receiveData(QString data)
 {
     ui->textEdit->setText(data);
 }
-
-void MainWindow::on_pushButton_clicked()
-{
-
-}
