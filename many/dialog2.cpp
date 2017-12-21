@@ -27,4 +27,5 @@ void Dialog2::on_ok_clicked()
     int l;l=st.toInt();
     car bc;
     bc.ID=s;bc.l=l;
+    emit sendData(bc);  //获取lineEdit的输入并且传递出去
 }

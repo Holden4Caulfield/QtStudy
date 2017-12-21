@@ -1,6 +1,6 @@
 #ifndef DIALOG2_H
 #define DIALOG2_H
-
+#include"car.h"
 #include <QDialog>
 
 namespace Ui {
@@ -20,6 +20,8 @@ private slots:
 
     void on_ok_clicked();
 
+signals:
+    void sendData(car);
 private:
     Ui::Dialog2 *ui;
 };

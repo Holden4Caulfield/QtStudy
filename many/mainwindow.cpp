@@ -6,6 +6,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    d1=new Dialog1(this);
+    d2=new Dialog2(this);
+    connect(d2, SIGNAL(sendData(car)), this, SLOT(receiveData(car)));
 }
 
 MainWindow::~MainWindow()
@@ -14,19 +17,20 @@ MainWindow::~MainWindow()
 }
 void MainWindow::on_dia1_clicked()
 {
-    d1=new Dialog1(this);
+    //d1=new Dialog1(this);
     d1->show();
     this->hide();
 }
 void MainWindow::on_pushButton_clicked()
 {
-    d2=new Dialog2(this);
+    //d2=new Dialog2(this);
     d2->show();
     this->hide();
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
+    ui->textEdit->clear();
     QList<car>::iterator iter;
     iter=Link.begin();
     for(;iter!=Link.end();iter++)
@@ -34,4 +38,10 @@ void MainWindow::on_pushButton_2_clicked()
         QString s=iter->ID;
         ui->textEdit->append(s);
     }
+}
+
+void MainWindow::receiveData(car data)
+{
+    Link.append(data);
+   // ui->textEdit->setText(data);
 }

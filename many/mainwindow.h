@@ -23,6 +23,7 @@ private slots:
     void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
+    void receiveData(car data);   //接收传递过来的数据的槽
 
 private:
     Ui::MainWindow *ui;
