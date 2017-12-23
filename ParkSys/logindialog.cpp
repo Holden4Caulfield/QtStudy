@@ -17,12 +17,17 @@ void LoginDialog::on_loginBtn_clicked()
 {
     // 判断用户名和密码是否正确，
         // 如果错误则弹出警告对话框
-        if(ui->usrLineEdit->text() == tr("feng") &&
-               ui->pwdLineEdit->text() == tr("123456"))
+        if(ui->usrLineEdit->text() == tr("") &&
+               ui->pwdLineEdit->text() == tr(""))
         {
            accept();
         }
         else {
            QMessageBox::warning(this,"警告","...0",QMessageBox::Yes);
         }
+}
+
+void LoginDialog::on_exitBtn_clicked()
+{
+    this->close();
 }
