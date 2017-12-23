@@ -21,12 +21,17 @@ void Dialog2::on_pushButton_clicked()
 
 void Dialog2::on_ok_clicked()
 {
-    QString s,st;
-    s=ui->idText->text();
+
+    QString sd,st;
+    sd=ui->idText->text();
     st=ui->lineEdit->text();
     int l;l=st.toInt();
     car bc;
-    bc.ID=s;bc.l=l;
+    std::string s=sd.toStdString();
+    char* c;
+    c =new char[20];
+    strcpy(c,s.c_str());
+    strcpy(bc.ID,c);//bc.l=l;
     emit sendData(bc);               //获取lineEdit的输入并且传递出去
 
 }
