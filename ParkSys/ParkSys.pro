@@ -28,16 +28,25 @@ SOURCES += main.cpp\
     logindialog.cpp \
     information.cpp \
     searchtime.cpp \
-    idsearch.cpp
+    idsearch.cpp \
+    vehiclemanage.cpp \
+    viplogin.cpp \
+    cartodeque.cpp
 
 HEADERS  += mainwindow.h \
     logindialog.h \
     information.h \
     searchtime.h \
-    idsearch.h
+    idsearch.h \
+    vehiclemanage.h \
+    viplogin.h \
+    cartodeque.h
 
 FORMS    += mainwindow.ui \
     logindialog.ui \
     information.ui \
     searchtime.ui \
-    idsearch.ui
+    idsearch.ui \
+    vehiclemanage.ui \
+    viplogin.ui \
+    cartodeque.ui

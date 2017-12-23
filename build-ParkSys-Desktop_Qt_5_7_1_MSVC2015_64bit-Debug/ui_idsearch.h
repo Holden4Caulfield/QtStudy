@@ -57,7 +57,7 @@ public:
         lineEdit->setGeometry(QRect(90, 140, 231, 31));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(470, 130, 121, 28));
+        pushButton_2->setGeometry(QRect(470, 130, 131, 28));
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
         pushButton_3->setGeometry(QRect(470, 180, 131, 28));

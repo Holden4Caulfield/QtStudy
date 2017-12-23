@@ -28,6 +28,9 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QPushButton *InforSearch;
+    QPushButton *VehMana;
+    QPushButton *pushButton;
+    QPushButton *LogVip;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -41,7 +44,16 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         InforSearch = new QPushButton(centralWidget);
         InforSearch->setObjectName(QStringLiteral("InforSearch"));
-        InforSearch->setGeometry(QRect(242, 230, 181, 61));
+        InforSearch->setGeometry(QRect(230, 270, 181, 111));
+        VehMana = new QPushButton(centralWidget);
+        VehMana->setObjectName(QStringLiteral("VehMana"));
+        VehMana->setGeometry(QRect(230, 130, 181, 101));
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(572, 440, 121, 41));
+        LogVip = new QPushButton(centralWidget);
+        LogVip->setObjectName(QStringLiteral("LogVip"));
+        LogVip->setGeometry(QRect(70, 50, 111, 41));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -63,6 +75,9 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
         InforSearch->setText(QApplication::translate("MainWindow", "\344\277\241\346\201\257\346\237\245\350\257\242", Q_NULLPTR));
+        VehMana->setText(QApplication::translate("MainWindow", "\350\275\246\350\276\206\347\256\241\347\220\206", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("MainWindow", "\351\200\200\345\207\272", Q_NULLPTR));
+        LogVip->setText(QApplication::translate("MainWindow", "\346\263\250\345\206\214\344\274\232\345\221\230", Q_NULLPTR));
     } // retranslateUi
 
 };

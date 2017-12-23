@@ -85,7 +85,7 @@ public:
     {
         if (SearchTime->objectName().isEmpty())
             SearchTime->setObjectName(QStringLiteral("SearchTime"));
-        SearchTime->resize(800, 600);
+        SearchTime->resize(843, 643);
         centralwidget = new QWidget(SearchTime);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         label = new QLabel(centralwidget);
@@ -93,7 +93,7 @@ public:
         label->setGeometry(QRect(250, 30, 251, 51));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(540, 480, 141, 51));
+        pushButton->setGeometry(QRect(690, 190, 141, 51));
         syear = new QLineEdit(centralwidget);
         syear->setObjectName(QStringLiteral("syear"));
         syear->setGeometry(QRect(180, 100, 31, 21));
@@ -156,10 +156,10 @@ public:
         label_16->setGeometry(QRect(450, 150, 21, 16));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(560, 80, 131, 51));
+        pushButton_2->setGeometry(QRect(500, 70, 131, 51));
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(560, 160, 131, 51));
+        pushButton_3->setGeometry(QRect(500, 140, 131, 51));
         label_9 = new QLabel(centralwidget);
         label_9->setObjectName(QStringLiteral("label_9"));
         label_9->setGeometry(QRect(390, 270, 21, 16));
@@ -174,7 +174,7 @@ public:
         label_10->setGeometry(QRect(210, 320, 21, 16));
         pushButton_4 = new QPushButton(centralwidget);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setGeometry(QRect(550, 330, 131, 51));
+        pushButton_4->setGeometry(QRect(500, 300, 131, 51));
         sday_2 = new QLineEdit(centralwidget);
         sday_2->setObjectName(QStringLiteral("sday_2"));
         sday_2->setGeometry(QRect(300, 270, 21, 21));
@@ -222,7 +222,7 @@ public:
         label_21->setGeometry(QRect(330, 270, 21, 16));
         pushButton_5 = new QPushButton(centralwidget);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
-        pushButton_5->setGeometry(QRect(550, 250, 131, 51));
+        pushButton_5->setGeometry(QRect(500, 240, 131, 51));
         eday_2 = new QLineEdit(centralwidget);
         eday_2->setObjectName(QStringLiteral("eday_2"));
         eday_2->setGeometry(QRect(300, 320, 21, 21));
@@ -234,11 +234,17 @@ public:
         label_23->setGeometry(QRect(40, 280, 101, 61));
         textEdit = new QTextEdit(centralwidget);
         textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(30, 380, 491, 171));
+        textEdit->setEnabled(true);
+        textEdit->setGeometry(QRect(20, 380, 801, 192));
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(textEdit->sizePolicy().hasHeightForWidth());
+        textEdit->setSizePolicy(sizePolicy);
         SearchTime->setCentralWidget(centralwidget);
         menubar = new QMenuBar(SearchTime);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 26));
+        menubar->setGeometry(QRect(0, 0, 843, 26));
         SearchTime->setMenuBar(menubar);
         statusbar = new QStatusBar(SearchTime);
         statusbar->setObjectName(QStringLiteral("statusbar"));
