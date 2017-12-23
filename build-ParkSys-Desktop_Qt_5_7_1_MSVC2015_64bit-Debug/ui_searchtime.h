@@ -96,7 +96,7 @@ public:
         pushButton->setGeometry(QRect(690, 190, 141, 51));
         syear = new QLineEdit(centralwidget);
         syear->setObjectName(QStringLiteral("syear"));
-        syear->setGeometry(QRect(180, 100, 31, 21));
+        syear->setGeometry(QRect(160, 100, 41, 21));
         smonth = new QLineEdit(centralwidget);
         smonth->setObjectName(QStringLiteral("smonth"));
         smonth->setGeometry(QRect(250, 100, 21, 21));
@@ -108,7 +108,7 @@ public:
         shour->setGeometry(QRect(370, 100, 21, 21));
         eyear = new QLineEdit(centralwidget);
         eyear->setObjectName(QStringLiteral("eyear"));
-        eyear->setGeometry(QRect(180, 150, 31, 21));
+        eyear->setGeometry(QRect(160, 150, 41, 21));
         eday = new QLineEdit(centralwidget);
         eday->setObjectName(QStringLiteral("eday"));
         eday->setGeometry(QRect(310, 150, 21, 21));
@@ -186,7 +186,7 @@ public:
         shour_2->setGeometry(QRect(360, 270, 21, 21));
         syear_2 = new QLineEdit(centralwidget);
         syear_2->setObjectName(QStringLiteral("syear_2"));
-        syear_2->setGeometry(QRect(170, 270, 31, 21));
+        syear_2->setGeometry(QRect(160, 270, 41, 21));
         label_12 = new QLabel(centralwidget);
         label_12->setObjectName(QStringLiteral("label_12"));
         label_12->setGeometry(QRect(440, 270, 21, 16));
@@ -198,7 +198,7 @@ public:
         label_18->setGeometry(QRect(270, 320, 21, 16));
         eyear_2 = new QLineEdit(centralwidget);
         eyear_2->setObjectName(QStringLiteral("eyear_2"));
-        eyear_2->setGeometry(QRect(170, 320, 31, 21));
+        eyear_2->setGeometry(QRect(160, 320, 41, 21));
         label_19 = new QLabel(centralwidget);
         label_19->setObjectName(QStringLiteral("label_19"));
         label_19->setGeometry(QRect(270, 270, 21, 16));
@@ -228,7 +228,7 @@ public:
         eday_2->setGeometry(QRect(300, 320, 21, 21));
         label_22 = new QLabel(centralwidget);
         label_22->setObjectName(QStringLiteral("label_22"));
-        label_22->setGeometry(QRect(50, 100, 101, 61));
+        label_22->setGeometry(QRect(40, 100, 101, 61));
         label_23 = new QLabel(centralwidget);
         label_23->setObjectName(QStringLiteral("label_23"));
         label_23->setGeometry(QRect(40, 280, 101, 61));

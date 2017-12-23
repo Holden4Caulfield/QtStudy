@@ -31,7 +31,10 @@ SOURCES += main.cpp\
     idsearch.cpp \
     vehiclemanage.cpp \
     viplogin.cpp \
-    cartodeque.cpp
+    cartodeque.cpp \
+    cartopark.cpp \
+    carleftdeque.cpp \
+    carleftpark.cpp
 
 HEADERS  += mainwindow.h \
     logindialog.h \
@@ -40,7 +43,10 @@ HEADERS  += mainwindow.h \
     idsearch.h \
     vehiclemanage.h \
     viplogin.h \
-    cartodeque.h
+    cartodeque.h \
+    cartopark.h \
+    carleftdeque.h \
+    carleftpark.h
 
 FORMS    += mainwindow.ui \
     logindialog.ui \
@@ -49,4 +55,7 @@ FORMS    += mainwindow.ui \
     idsearch.ui \
     vehiclemanage.ui \
     viplogin.ui \
-    cartodeque.ui
+    cartodeque.ui \
+    cartopark.ui \
+    carleftdeque.ui \
+    carleftpark.ui

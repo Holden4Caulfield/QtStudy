@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+//车辆排队
+
 namespace Ui {
 class CarToDeque;
 }
@@ -14,6 +16,11 @@ class CarToDeque : public QMainWindow
 public:
     explicit CarToDeque(QWidget *parent = 0);
     ~CarToDeque();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::CarToDeque *ui;

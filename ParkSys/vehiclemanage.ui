@@ -27,6 +27,58 @@
      <string>返回</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="cartoD">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>100</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>车辆开始排队</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="carleftD">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>200</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>车辆离开排队队列</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cartoP">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>300</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>车辆进场</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="carleftP">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>400</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>车辆离开</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

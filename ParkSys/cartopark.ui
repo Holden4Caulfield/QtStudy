@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CarToDeque</class>
- <widget class="QMainWindow" name="CarToDeque">
+ <class>CarToPark</class>
+ <widget class="QMainWindow" name="CarToPark">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -14,24 +14,11 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>90</y>
-      <width>191</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;开始排队&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>400</y>
+      <x>580</x>
+      <y>420</y>
       <width>121</width>
       <height>51</height>
      </rect>
@@ -40,25 +27,25 @@
      <string>返回</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>400</y>
-      <width>111</width>
-      <height>51</height>
+      <x>260</x>
+      <y>90</y>
+      <width>201</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
-     <string>确定</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;进入停车场&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>140</x>
       <y>180</y>
-      <width>81</width>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -66,40 +53,53 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;车牌号：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>180</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>240</y>
+      <x>130</x>
+      <y>230</y>
       <width>111</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;入口位置：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>180</y>
-      <width>113</width>
-      <height>21</height>
-     </rect>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;入口方向：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>240</y>
-      <width>113</width>
+      <x>260</x>
+      <y>230</y>
+      <width>171</width>
       <height>21</height>
      </rect>
     </property>
     <property name="placeholderText">
      <string>0为南/1为北</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>420</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确定</string>
     </property>
    </widget>
   </widget>

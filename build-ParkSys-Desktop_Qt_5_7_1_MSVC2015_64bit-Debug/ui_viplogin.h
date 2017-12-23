@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -29,6 +30,9 @@ public:
     QWidget *centralwidget;
     QLabel *label;
     QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QLabel *label_2;
+    QLineEdit *lineEdit;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -45,6 +49,15 @@ public:
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(552, 410, 121, 61));
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(150, 400, 111, 61));
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(160, 220, 91, 41));
+        lineEdit = new QLineEdit(centralwidget);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEdit->setGeometry(QRect(310, 220, 241, 41));
         VipLogin->setCentralWidget(centralwidget);
         menubar = new QMenuBar(VipLogin);
         menubar->setObjectName(QStringLiteral("menubar"));
@@ -64,6 +77,8 @@ public:
         VipLogin->setWindowTitle(QApplication::translate("VipLogin", "MainWindow", Q_NULLPTR));
         label->setText(QApplication::translate("VipLogin", "<html><head/><body><p><span style=\" font-size:18pt;\">\346\263\250\345\206\214vip</span></p></body></html>", Q_NULLPTR));
         pushButton->setText(QApplication::translate("VipLogin", "\350\277\224\345\233\236", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("VipLogin", "OK", Q_NULLPTR));
+        label_2->setText(QApplication::translate("VipLogin", "\350\276\223\345\205\245\350\275\246\347\211\214\345\217\267\357\274\232", Q_NULLPTR));
     } // retranslateUi
 
 };
