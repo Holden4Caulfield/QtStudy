@@ -46,7 +46,8 @@ HEADERS  += mainwindow.h \
     cartodeque.h \
     cartopark.h \
     carleftdeque.h \
-    carleftpark.h
+    carleftpark.h \
+    head.h
 
 FORMS    += mainwindow.ui \
     logindialog.ui \

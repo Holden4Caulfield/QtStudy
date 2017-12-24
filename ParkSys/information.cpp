@@ -7,7 +7,6 @@ Information::Information(QWidget *parent) :
     ui(new Ui::Information)
 {
     ui->setupUi(this);
-    //seatime=new SearchTime(this);
 }
 
 Information::~Information()
@@ -23,14 +22,14 @@ void Information::on_pushButton_clicked()
 
 void Information::on_pushButton_2_clicked()
 {
-    seatime=new SearchTime(this);
+    SearchTime *seatime=new SearchTime(this);
     seatime->show();
     this->hide();
 }
 
 void Information::on_pushButton_3_clicked()
 {
-    idsea=new IDSearch(this);
+    IDSearch *idsea=new IDSearch(this);
     idsea->show();
     this->hide();
 }

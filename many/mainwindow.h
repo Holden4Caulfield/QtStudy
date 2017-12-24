@@ -15,7 +15,8 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    QList<car>Link;
+    //QList<car>Link;
+    Link List;
 
 private slots:
     void on_dia1_clicked();

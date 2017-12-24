@@ -951,13 +951,7 @@ release\dialog2.obj: ..\..\QtStudy\many\dialog2.cpp ../../QtStudy/many/dialog2.h
 		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtCore\qfiledevice.h \
 		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtGui\qvector2d.h \
 		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtGui\qtouchdevice.h \
-		ui_dialog2.h \
-		../../QtStudy/many/mainwindow.h \
-		../../QtStudy/many/dialog1.h \
-		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets\QMainWindow \
-		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets\qmainwindow.h \
-		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets\qtabwidget.h \
-		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtGui\qicon.h
+		ui_dialog2.h
 
 release\moc_mainwindow.obj: release\moc_mainwindow.cpp 
 

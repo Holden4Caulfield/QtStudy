@@ -8,9 +8,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    inf=new Information(this);
-    vehm=new VehicleManage(this);
-    viplog=new VipLogin(this);
 }
 
 MainWindow::~MainWindow()
@@ -20,13 +17,14 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_InforSearch_clicked()
 {
-    //inf=new Information(this);
+    Information *inf=new Information(this);
     inf->show();
     this->hide();
 }
 
 void MainWindow::on_VehMana_clicked()
 {
+    VehicleManage *vehm=new VehicleManage(this);
     vehm->show();
     this->hide();
 }
@@ -38,6 +36,7 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_LogVip_clicked()
 {
+    VipLogin *viplog=new VipLogin(this);
     viplog->show();
     this->hide();
 }

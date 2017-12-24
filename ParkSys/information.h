@@ -25,8 +25,6 @@ private slots:
 
 private:
     Ui::Information *ui;
-    SearchTime *seatime;
-    IDSearch *idsea;
 
 };
 

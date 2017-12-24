@@ -30,14 +30,16 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    ui->textEdit->clear();
+    /*ui->textEdit->clear();
     QList<car>::iterator iter;
     iter=Link.begin();
     for(;iter!=Link.end();iter++)
     {
         QString s=iter->ID;
         ui->textEdit->append(s);
-    }
+    }*/
+    Link l;l=this->List;
+
 }
 
 void MainWindow::receiveData(car data)

@@ -9,10 +9,6 @@ VehicleManage::VehicleManage(QWidget *parent) :
     ui(new Ui::VehicleManage)
 {
     ui->setupUi(this);
-    ctp=new CarToPark(this);
-    ctd=new CarToDeque(this);
-    cld=new CarLeftDeque(this);
-    clp=new CarLeftPark(this);
 }
 
 VehicleManage::~VehicleManage()
@@ -28,24 +24,28 @@ void VehicleManage::on_pushButton_clicked()
 
 void VehicleManage::on_cartoD_clicked()
 {
+    CarToDeque *ctd=new CarToDeque(this);
     ctd->show();
     this->hide();
 }
 
 void VehicleManage::on_carleftD_clicked()
 {
+    CarLeftDeque *cld=new CarLeftDeque(this);
     cld->show();
     this->hide();
 }
 
 void VehicleManage::on_cartoP_clicked()
 {
+    CarToPark *ctp=new CarToPark(this);
     ctp->show();
     this->hide();
 }
 
 void VehicleManage::on_carleftP_clicked()
 {
+     CarLeftPark *clp=new CarLeftPark(this);
     clp->show();
     this->hide();
 }

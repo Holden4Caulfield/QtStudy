@@ -31,10 +31,6 @@ private slots:
 
 private:
     Ui::VehicleManage *ui;
-    CarToDeque *ctd;
-    CarToPark *ctp;
-    CarLeftDeque *cld;
-    CarLeftPark *clp;
 };
 
 #endif // VEHICLEMANAGE_H

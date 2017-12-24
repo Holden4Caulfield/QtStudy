@@ -30,9 +30,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Information *inf;
-    VehicleManage *vehm;
-    VipLogin *viplog;
 };
 
 #endif // MAINWINDOW_H
