@@ -55,3 +55,15 @@ void MainWindow::on_pushButton_3_clicked()
         if(iter->ID=="456")List.removeAt(i);
     }
 }
+
+void MainWindow::jia()
+{
+    Car ak;
+    ak.ID="lik";
+    List.append(ak);
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    jia();
+}

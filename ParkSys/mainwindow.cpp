@@ -4,6 +4,7 @@
 #include<iterator>
 #include"vehiclemanage.h"
 #include"viplogin.h"
+#include"time.h"
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -63,7 +64,7 @@ void MainWindow::car_to_deque(QString s, int location)
 
 void MainWindow::car_left_deque(QString s, int location)
 {
-    if(location)
+    if(!location)
     {
         QList<Car>::iterator iter;
         int i=0;
