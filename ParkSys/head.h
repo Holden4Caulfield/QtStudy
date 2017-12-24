@@ -11,9 +11,10 @@ typedef struct Car {
         int rank;	    //排队序号
         int locate;		//在停车场中的车位
         double cost;		//停车费用
-        int dir;		//入口方向，（0为南，1为北）
-        //tm indeque, start, end;	//三个时间
-        struct tm indeque,start,end;
-        bool vip = 0;		//判断用户是否为VIP贵宾
+        int dir;
+        struct tm indeque;
+        struct tm start;
+        struct tm end;
+        bool vip = false;		//判断用户是否为VIP贵宾
 } Car;
 #endif // HEAD_H

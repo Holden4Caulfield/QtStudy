@@ -20,7 +20,8 @@ public:
     ~VehicleManage();
     void car_to_deque_c(QString s, int location);
     void car_left_deque_c(QString s, int location);
-
+    void car_to_Park_c(QString s,int location);
+    void car_left_Park_c(QString s);
 
 private slots:
     void on_pushButton_clicked();

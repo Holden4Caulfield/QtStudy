@@ -22,6 +22,10 @@ void CarToPark::on_pushButton_clicked()
 
 void CarToPark::on_pushButton_2_clicked()
 {
-    QMessageBox::about(this,"ok","The car has in park");
+    VehicleManage *m=(VehicleManage *)parentWidget();
+    QString sd=ui->lineEdit->text();
+    QString sb=ui->lineEdit_2->text();
+    int l=sb.toInt();
+    m->car_to_Park_c(sd,l);
    // this->show();
 }

@@ -22,7 +22,6 @@ void CarToDeque::on_pushButton_clicked()
 
 void CarToDeque::on_pushButton_2_clicked()
 {
-    QMessageBox::about(this,"ok","The car has in deque");
     VehicleManage *m=(VehicleManage *)parentWidget();
     QString sd=ui->lineEdit->text();
     QString sb=ui->lineEdit_2->text();

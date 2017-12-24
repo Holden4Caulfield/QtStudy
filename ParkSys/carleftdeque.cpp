@@ -27,7 +27,5 @@ void CarLeftDeque::on_pushButton_2_clicked()
     QString sb=ui->lineEdit_2->text();
     int l=sb.toInt();
     m->car_left_deque_c(sd,l);
-    //QMessageBox::about(this,"车辆离开","该车辆已经离开停车场");
-    QMessageBox::about(this,"ok","The car has come out the deque");
 
 }

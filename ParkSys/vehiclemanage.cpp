@@ -62,3 +62,15 @@ void VehicleManage::car_left_deque_c(QString s, int location)
     MainWindow *m=(MainWindow *)parentWidget();
     m->car_left_deque(s,location);
 }
+void VehicleManage::car_to_Park_c(QString s, int location)
+{
+
+    MainWindow *m=(MainWindow *)parentWidget();
+    m->car_to_Park(s,location);
+}
+
+void VehicleManage::car_left_Park_c(QString s)
+{
+    MainWindow *m=(MainWindow *)parentWidget();
+    m->car_left_Park(s);
+}

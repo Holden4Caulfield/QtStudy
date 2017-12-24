@@ -18,6 +18,7 @@ public:
     explicit CarLeftPark(QWidget *parent = 0);
     ~CarLeftPark();
 
+
 private slots:
     void on_pushButton_clicked();
 

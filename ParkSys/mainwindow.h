@@ -3,7 +3,6 @@
 
 #include"head.h"
 //主菜单
-
 #include <QMainWindow>
 #include"information.h"
 #include"vehiclemanage.h"
@@ -30,6 +29,13 @@ public:
     int north_deque;
     void car_to_deque(QString s,int location);
     void car_left_deque(QString s,int location);
+    void car_to_Park(QString s,int location);
+    void car_left_Park(QString s);
+    void Update_infor();
+    int up_full();
+    int up_car=0;
+    int car_now=0;
+    bool cin_wrong(QString s);
 
 private slots:
     void on_InforSearch_clicked();
@@ -40,6 +46,8 @@ private slots:
 
 
     void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::MainWindow *ui;
