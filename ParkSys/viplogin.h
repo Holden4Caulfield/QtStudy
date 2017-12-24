@@ -1,6 +1,7 @@
 #ifndef VIPLOGIN_H
 #define VIPLOGIN_H
 
+#include"head.h"
 #include <QMainWindow>
 
 namespace Ui {

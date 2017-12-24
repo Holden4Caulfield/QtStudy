@@ -1,6 +1,7 @@
 #include "carleftpark.h"
 #include "ui_carleftpark.h"
 #include"QMessageBox"
+#include"vehiclemanage.h"
 CarLeftPark::CarLeftPark(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::CarLeftPark)

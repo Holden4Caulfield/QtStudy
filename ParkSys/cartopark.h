@@ -1,6 +1,7 @@
 #ifndef CARTOPARK_H
 #define CARTOPARK_H
 
+#include"head.h"
 #include <QMainWindow>
 
 //进入停车场

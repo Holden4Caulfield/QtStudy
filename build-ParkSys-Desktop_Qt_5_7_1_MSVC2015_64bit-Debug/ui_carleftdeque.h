@@ -33,6 +33,7 @@ public:
     QLabel *label_2;
     QLineEdit *lineEdit;
     QPushButton *pushButton_2;
+    QLineEdit *lineEdit_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -58,6 +59,9 @@ public:
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
         pushButton_2->setGeometry(QRect(220, 400, 111, 51));
+        lineEdit_2 = new QLineEdit(centralwidget);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(330, 280, 171, 31));
         CarLeftDeque->setCentralWidget(centralwidget);
         menubar = new QMenuBar(CarLeftDeque);
         menubar->setObjectName(QStringLiteral("menubar"));

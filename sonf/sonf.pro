@@ -25,11 +25,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    son.cpp
+    son.cpp \
+    achl.cpp
 
 HEADERS  += mainwindow.h \
     head.h \
-    son.h
+    son.h \
+    achl.h
 
 FORMS    += mainwindow.ui \
-    son.ui
+    son.ui \
+    achl.ui

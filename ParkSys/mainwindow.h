@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include"head.h"
 //主菜单
 
 #include <QMainWindow>
@@ -19,6 +20,16 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    QList<Car>In_deque_north;
+    QList<Car>In_deque_south;
+    QList<Car>In_Park_Now;
+    QList<Car>In_Park_History;
+    QList<Car>In_Park_up;
+    QList<Car>In_Park_dowm;
+    int south_deque;
+    int north_deque;
+    void car_to_deque(QString s,int location);
+    void car_left_deque(QString s,int location);
 
 private slots:
     void on_InforSearch_clicked();
@@ -27,6 +38,8 @@ private slots:
     void on_pushButton_clicked();
     void on_LogVip_clicked();
 
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;

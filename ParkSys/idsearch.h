@@ -1,6 +1,7 @@
 #ifndef IDSEARCH_H
 #define IDSEARCH_H
 
+#include"head.h"
 #include <QMainWindow>
 
 namespace Ui {

@@ -1,6 +1,7 @@
 #include "carleftdeque.h"
 #include "ui_carleftdeque.h"
 #include<QMessageBox>
+#include"vehiclemanage.h"
 CarLeftDeque::CarLeftDeque(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::CarLeftDeque)
@@ -21,7 +22,12 @@ void CarLeftDeque::on_pushButton_clicked()
 
 void CarLeftDeque::on_pushButton_2_clicked()
 {
+    VehicleManage *m=(VehicleManage *)parentWidget();
+    QString sd=ui->lineEdit->text();
+    QString sb=ui->lineEdit_2->text();
+    int l=sb.toInt();
+    m->car_left_deque_c(sd,l);
     //QMessageBox::about(this,"车辆离开","该车辆已经离开停车场");
     QMessageBox::about(this,"ok","The car has come out the deque");
-   // this->show();
+
 }

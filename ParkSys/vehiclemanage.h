@@ -1,6 +1,7 @@
 #ifndef VEHICLEMANAGE_H
 #define VEHICLEMANAGE_H
 
+#include"head.h"
 #include <QMainWindow>
 #include"cartodeque.h"
 #include"cartopark.h"
@@ -17,6 +18,9 @@ class VehicleManage : public QMainWindow
 public:
     explicit VehicleManage(QWidget *parent = 0);
     ~VehicleManage();
+    void car_to_deque_c(QString s, int location);
+    void car_left_deque_c(QString s, int location);
+
 
 private slots:
     void on_pushButton_clicked();

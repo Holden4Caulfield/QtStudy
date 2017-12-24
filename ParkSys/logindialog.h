@@ -1,6 +1,7 @@
 #ifndef LOGINDIALOG_H
 #define LOGINDIALOG_H
 
+#include"head.h"
 #include <QDialog>
 
 namespace Ui {

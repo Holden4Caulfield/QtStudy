@@ -39,6 +39,7 @@ public:
     QLabel *label_5;
     QLabel *label_6;
     QLabel *label_7;
+    QPushButton *pushButton_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -83,6 +84,9 @@ public:
         label_7 = new QLabel(centralWidget);
         label_7->setObjectName(QStringLiteral("label_7"));
         label_7->setGeometry(QRect(660, 310, 72, 15));
+        pushButton_2 = new QPushButton(centralWidget);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(430, 450, 93, 28));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -114,6 +118,7 @@ public:
         label_5->setText(QApplication::translate("MainWindow", "\345\214\227\347\253\257\346\216\222\351\230\237\350\275\246\350\276\206\357\274\232", Q_NULLPTR));
         label_6->setText(QApplication::translate("MainWindow", "TextLabel", Q_NULLPTR));
         label_7->setText(QApplication::translate("MainWindow", "TextLabel", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("MainWindow", "\346\233\264\346\226\260", Q_NULLPTR));
     } // retranslateUi
 
 };

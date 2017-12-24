@@ -1,6 +1,7 @@
 #ifndef CARTODEQUE_H
 #define CARTODEQUE_H
 
+#include"head.h"
 #include <QMainWindow>
 
 //车辆排队

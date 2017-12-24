@@ -1,6 +1,7 @@
 #ifndef CARLEFTPARK_H
 #define CARLEFTPARK_H
 
+#include"head.h"
 #include <QMainWindow>
 
 //离开停车场

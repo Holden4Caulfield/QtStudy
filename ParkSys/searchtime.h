@@ -1,6 +1,7 @@
 #ifndef SEARCHTIME_H
 #define SEARCHTIME_H
 
+#include"head.h"
 #include <QMainWindow>
 
 namespace Ui {

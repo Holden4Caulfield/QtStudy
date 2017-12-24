@@ -31,6 +31,7 @@ public:
     QTextEdit *textEdit;
     QPushButton *pushButton;
     QLineEdit *lineEdit;
+    QPushButton *pushButton_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -50,6 +51,9 @@ public:
         lineEdit = new QLineEdit(centralwidget);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
         lineEdit->setGeometry(QRect(220, 140, 113, 21));
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(470, 370, 93, 28));
         son->setCentralWidget(centralwidget);
         menubar = new QMenuBar(son);
         menubar->setObjectName(QStringLiteral("menubar"));
@@ -68,6 +72,7 @@ public:
     {
         son->setWindowTitle(QApplication::translate("son", "MainWindow", Q_NULLPTR));
         pushButton->setText(QApplication::translate("son", "PushButton", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("son", "\345\204\277\345\255\220", Q_NULLPTR));
     } // retranslateUi
 
 };
