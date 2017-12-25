@@ -39,6 +39,8 @@ public:
     int car_now=0;
     bool cin_wrong(QString s);
     int Set_distri();
+    Car his_car(QString s);
+    Car Now_car(QString s);
 
 private slots:
     void on_InforSearch_clicked();

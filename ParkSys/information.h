@@ -16,6 +16,8 @@ class Information : public QMainWindow
 public:
     explicit Information(QWidget *parent = 0);
     ~Information();
+    Car his_car_c(QString s);
+    Car Now_car_c(QString s);
 
 private slots:
     void on_pushButton_clicked();

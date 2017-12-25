@@ -2046,7 +2046,17 @@ release\information.obj: ..\..\QtStudy\ParkSys\information.cpp ../../QtStudy/Par
 		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtGui\qicon.h \
 		../../QtStudy/ParkSys/searchtime.h \
 		../../QtStudy/ParkSys/idsearch.h \
-		ui_information.h
+		ui_information.h \
+		../../QtStudy/ParkSys/mainwindow.h \
+		../../QtStudy/ParkSys/vehiclemanage.h \
+		../../QtStudy/ParkSys/cartodeque.h \
+		../../QtStudy/ParkSys/cartopark.h \
+		../../QtStudy/ParkSys/carleftdeque.h \
+		../../QtStudy/ParkSys/carleftpark.h \
+		../../QtStudy/ParkSys/viplogin.h \
+		../../QtStudy/ParkSys/outputmessage.h \
+		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets\QDialog \
+		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets\qdialog.h
 
 release\searchtime.obj: ..\..\QtStudy\ParkSys\searchtime.cpp ../../QtStudy/ParkSys/searchtime.h \
 		../../QtStudy/ParkSys/head.h \
@@ -2258,7 +2268,12 @@ release\idsearch.obj: ..\..\QtStudy\ParkSys\idsearch.cpp ../../QtStudy/ParkSys/i
 		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtGui\qtouchdevice.h \
 		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets\qtabwidget.h \
 		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtGui\qicon.h \
-		ui_idsearch.h
+		ui_idsearch.h \
+		../../QtStudy/ParkSys/information.h \
+		../../QtStudy/ParkSys/searchtime.h \
+		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets\QMessageBox \
+		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets\qmessagebox.h \
+		..\..\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets\qdialog.h
 
 release\vehiclemanage.obj: ..\..\QtStudy\ParkSys\vehiclemanage.cpp ../../QtStudy/ParkSys/vehiclemanage.h \
 		../../QtStudy/ParkSys/head.h \

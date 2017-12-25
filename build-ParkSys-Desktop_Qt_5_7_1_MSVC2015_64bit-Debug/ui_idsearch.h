@@ -20,7 +20,6 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -34,8 +33,8 @@ public:
     QLineEdit *lineEdit;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
-    QTextEdit *textEdit;
     QLabel *label_2;
+    QLineEdit *lineEdit_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -61,12 +60,12 @@ public:
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
         pushButton_3->setGeometry(QRect(470, 180, 131, 28));
-        textEdit = new QTextEdit(centralwidget);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(0, 280, 541, 291));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(10, 250, 111, 16));
+        lineEdit_2 = new QLineEdit(centralwidget);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(30, 320, 481, 41));
         IDSearch->setCentralWidget(centralwidget);
         menubar = new QMenuBar(IDSearch);
         menubar->setObjectName(QStringLiteral("menubar"));

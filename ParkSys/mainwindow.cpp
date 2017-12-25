@@ -153,44 +153,33 @@ void MainWindow::car_left_Park(QString s)
        int tap=1;
        if(In_Park_Now.isEmpty()){tap=1;}
       else
-       {
-         QList<Car>::iterator iter;
-        int i=0;int j;
+       {     
+        int i=0;
+        int j;
+        QList<Car>::iterator iter;
         iter=In_Park_Now.begin();
         for(;iter!=In_Park_Now.end();iter++,i++)
         {
             if(iter->ID==s)
             {
+            time_t timep;
+            time(&timep);
+            localtime_s(&iter->end, &timep);
             In_Park_History.append(In_Park_Now.at(i));
-            j=iter->locate;In_Park_Now.removeAt(i);
-            car_now=car_now-1;
+            j=iter->locate;
             jud[j]=false;
             tap=0;
+            if(j<4)up_car--;
+            if(i==car_now-1){car_now=car_now-1;In_Park_Now.removeLast();break;}
+            else{In_Park_Now.removeAt(i);car_now=car_now-1;break;}
             }
         }
        }
-        /*if(j<4)
-        {
-            QList<Car>::iterator iter2;
-            iter2=In_Park_up.begin();int i=0;
-            for(;iter2!=In_Park_up.end();iter2++,i++)
-            {
-                if(iter2->ID==s){this->up_car--;In_Park_Now.removeAt(i);}
-            }
-        }
-        else
-        {
-            QList<Car>::iterator iter2;
-            iter2=In_Park_dowm.begin();int i=0;
-            for(;iter2!=In_Park_dowm.end();iter2++,i++)
-            {
-                if(iter2->ID==s){In_Park_dowm.removeAt(i);}
-            }
-        }
-       }*/
+
         if(tap)QMessageBox::about(this,"sorry","The car may not in the park");
         else{QMessageBox::about(this,"OK","The car has go out");}
         this->show();
+
 }
 
 bool MainWindow::cin_wrong(QString s)
@@ -323,4 +312,56 @@ void MainWindow::on_pushButton_4_clicked()
 {
     OutputMessage *otpmes=new OutputMessage(this);
     otpmes->show();
+}
+
+Car MainWindow::his_car(QString s)
+{
+    int tap=1;
+    int i=0;
+    if(In_Park_History.isEmpty())
+    {
+    }
+    else
+    {
+        QList<Car>::iterator iter;
+        iter=In_Park_History.begin();
+        for(;iter!=In_Park_History.end();iter++,i++)
+        {
+            if(iter->ID==s)
+            {
+                tap=0;
+                return In_Park_History.at(i);
+            }
+        }
+    }
+    Car anewcar;
+    anewcar.ID="nocar";
+    anewcar.locate=-1;
+    return anewcar;
+}
+
+Car MainWindow::Now_car(QString s)
+{
+    int tap=1;
+    int i=0;
+    if(In_Park_Now.isEmpty())
+    {
+    }
+    else
+    {
+        QList<Car>::iterator iter;
+        iter=In_Park_Now.begin();
+        for(;iter!=In_Park_Now.end();iter++,i++)
+        {
+            if(iter->ID==s)
+            {
+                tap=0;
+                return In_Park_Now.at(i);
+            }
+        }
+    }
+    Car anewcar;
+    anewcar.ID="nocar";
+    anewcar.locate=-1;
+    return anewcar;
 }
