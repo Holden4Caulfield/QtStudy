@@ -7,6 +7,7 @@
 #include"information.h"
 #include"vehiclemanage.h"
 #include"viplogin.h"
+#include"outputmessage.h"
 //#include"searchtime.h"
 namespace Ui {
 class MainWindow;
@@ -27,6 +28,7 @@ public:
     QList<Car>In_Park_dowm;
     int south_deque;
     int north_deque;
+    bool jud[10];
     void car_to_deque(QString s,int location);
     void car_left_deque(QString s,int location);
     void car_to_Park(QString s,int location);
@@ -36,6 +38,7 @@ public:
     int up_car=0;
     int car_now=0;
     bool cin_wrong(QString s);
+    int Set_distri();
 
 private slots:
     void on_InforSearch_clicked();
@@ -48,6 +51,8 @@ private slots:
     void on_pushButton_2_clicked();
 
     void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
 
 private:
     Ui::MainWindow *ui;

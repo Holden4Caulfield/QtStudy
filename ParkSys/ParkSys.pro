@@ -34,7 +34,8 @@ SOURCES += main.cpp\
     cartodeque.cpp \
     cartopark.cpp \
     carleftdeque.cpp \
-    carleftpark.cpp
+    carleftpark.cpp \
+    outputmessage.cpp
 
 HEADERS  += mainwindow.h \
     logindialog.h \
@@ -47,7 +48,8 @@ HEADERS  += mainwindow.h \
     cartopark.h \
     carleftdeque.h \
     carleftpark.h \
-    head.h
+    head.h \
+    outputmessage.h
 
 FORMS    += mainwindow.ui \
     logindialog.ui \
@@ -59,4 +61,5 @@ FORMS    += mainwindow.ui \
     cartodeque.ui \
     cartopark.ui \
     carleftdeque.ui \
-    carleftpark.ui
+    carleftpark.ui \
+    outputmessage.ui

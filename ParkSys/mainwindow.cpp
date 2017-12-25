@@ -4,6 +4,7 @@
 #include<iterator>
 #include"vehiclemanage.h"
 #include"viplogin.h"
+#include"outputmessage.h"
 #include"time.h"
 #include<QMessageBox>
 MainWindow::MainWindow(QWidget *parent) :
@@ -111,7 +112,6 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::car_to_Park(QString s, int location)
 {
-   // car_now=car_now+1;
     Car anewcar;
     anewcar.ID=s;
     time_t timep;
@@ -119,6 +119,8 @@ void MainWindow::car_to_Park(QString s, int location)
     localtime_s(&anewcar.start, &timep);
     anewcar.indeque.tm_year=0;anewcar.indeque.tm_mon=0;anewcar.indeque.tm_mday=0;
     anewcar.dir=location;
+    anewcar.locate=Set_distri();
+    jud[Set_distri()]=true;
     if(cin_wrong(s))
     {
         QMessageBox::about(this,"sorry","please");
@@ -128,15 +130,15 @@ void MainWindow::car_to_Park(QString s, int location)
         if(up_full())
          {
         In_Park_dowm.append(anewcar);
-        this->up_car++;
          }
          else
         {
-        In_Park_up.append(anewcar);
+        In_Park_up.append(anewcar);up_car++;
         }
         QMessageBox::about(this,"ok","car has into park");
 
     }
+
     this->show();
 }
 
@@ -148,44 +150,47 @@ int MainWindow::up_full()
 
 void MainWindow::car_left_Park(QString s)
 {
-    //车辆离开停车场
-     //car_now=car_now-1;
-    int tap=1;
-    if(In_Park_Now.isEmpty()){tap=1;}
-    else
-    {
-      QList<Car>::iterator iter;
-     int i=0;int j;
-     iter=In_Park_Now.begin();
-     for(;iter!=In_Park_Now.end();iter++,i++)
-     {
-         if(iter->ID==s){j=iter->locate;In_Park_Now.removeAt(i);
-         car_now=car_now-1;
-         tap=0;
-         }
-     }
-    /* if(j<3)
-     {
-         QList<Car>::iterator iter2;
-         iter2=In_Park_up.begin();int i=0;
-         for(;iter2!=In_Park_up.end();iter2++,i++)
-         {
-             if(iter->ID==s){j=iter->locate;this->up_car--;In_Park_Now.removeAt(i);}
-         }
-     }
-     else
-     {
-         QList<Car>::iterator iter2;
-         iter2=In_Park_dowm.begin();int i=0;
-         for(;iter2!=In_Park_dowm.end();iter2++,i++)
-         {
-             if(iter->ID==s){In_Park_dowm.removeAt(i);}
-         }
-     }*/
-    }
-     if(tap)QMessageBox::about(this,"sorry","The car may not in the park");
-     else{QMessageBox::about(this,"OK","The car has go out");}
-     this->show();
+       int tap=1;
+       if(In_Park_Now.isEmpty()){tap=1;}
+      else
+       {
+         QList<Car>::iterator iter;
+        int i=0;int j;
+        iter=In_Park_Now.begin();
+        for(;iter!=In_Park_Now.end();iter++,i++)
+        {
+            if(iter->ID==s)
+            {
+            In_Park_History.append(In_Park_Now.at(i));
+            j=iter->locate;In_Park_Now.removeAt(i);
+            car_now=car_now-1;
+            jud[j]=false;
+            tap=0;
+            }
+        }
+       }
+        /*if(j<4)
+        {
+            QList<Car>::iterator iter2;
+            iter2=In_Park_up.begin();int i=0;
+            for(;iter2!=In_Park_up.end();iter2++,i++)
+            {
+                if(iter2->ID==s){this->up_car--;In_Park_Now.removeAt(i);}
+            }
+        }
+        else
+        {
+            QList<Car>::iterator iter2;
+            iter2=In_Park_dowm.begin();int i=0;
+            for(;iter2!=In_Park_dowm.end();iter2++,i++)
+            {
+                if(iter2->ID==s){In_Park_dowm.removeAt(i);}
+            }
+        }
+       }*/
+        if(tap)QMessageBox::about(this,"sorry","The car may not in the park");
+        else{QMessageBox::about(this,"OK","The car has go out");}
+        this->show();
 }
 
 bool MainWindow::cin_wrong(QString s)
@@ -231,6 +236,7 @@ void MainWindow::on_pushButton_3_clicked()
         time_t timep;
         time(&timep);
         localtime_s(&In_deque_south.first().start, &timep);
+        In_deque_south.first().locate=Set_distri();
         In_Park_Now.append(In_deque_south.first());       
         if(up_full()){In_Park_dowm.append(In_deque_south.first());}
         else{In_Park_up.append(In_deque_south.first());up_car++;}
@@ -242,6 +248,7 @@ void MainWindow::on_pushButton_3_clicked()
         time_t timep;
         time(&timep);
         localtime_s(&In_deque_north.first().start, &timep);
+        In_deque_north.first().locate=Set_distri();
         In_Park_Now.append(In_deque_north.first());
         if(up_full()){In_Park_dowm.append(In_deque_north.first());}
         else{In_Park_up.append(In_deque_north.first());up_car++;}
@@ -257,6 +264,7 @@ void MainWindow::on_pushButton_3_clicked()
                 time_t timep;
                 time(&timep);
                 localtime_s(&In_deque_north.first().start, &timep);
+                In_deque_north.first().locate=Set_distri();
                 In_Park_Now.append(In_deque_north.first());
                 if(up_full()){In_Park_dowm.append(In_deque_north.first());}
                 else{In_Park_up.append(In_deque_north.first());up_car++;}
@@ -267,6 +275,7 @@ void MainWindow::on_pushButton_3_clicked()
             time_t timep;
             time(&timep);
             localtime_s(&In_deque_south.first().start, &timep);
+            In_deque_south.first().locate=Set_distri();
             In_Park_Now.append(In_deque_south.first());
             if(up_full()){In_Park_dowm.append(In_deque_south.first());}
             else{In_Park_up.append(In_deque_south.first());up_car++;}
@@ -295,4 +304,23 @@ void MainWindow::Update_infor()
     ui->label_6->setText(sou);ui->label_7->setText(nor);
     QString nowcar=QString::number(car_now,10);
     ui->label_2->setText(nowcar);
+    QString upc=QString::number(up_car,10);
+    ui->label_9->setText(upc);
+}
+
+int MainWindow::Set_distri()
+{
+    //设置车位
+    int i=0;
+    while(jud[i])
+    {
+        i++;
+    }
+    return i;
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    OutputMessage *otpmes=new OutputMessage(this);
+    otpmes->show();
 }
